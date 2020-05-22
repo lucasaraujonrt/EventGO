@@ -1,5 +1,4 @@
 const express = require("express");
-const knex = require("./database");
 
 const app = express();
 const routes = require("./routes");
