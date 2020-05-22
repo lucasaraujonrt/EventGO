@@ -2,8 +2,8 @@ const knex = require("../database");
 
 module.exports = {
   async index(req, res) {
-    const results = await knex("event_");
+    const event = await knex("event_");
 
-    return res.json(results);
+    return res.json(event);
   },
 };

@@ -5,7 +5,7 @@ const userController = require("./controllers/userController");
 const eventController = require("./controllers/eventController");
 const ticketController = require("./controllers/ticketController");
 
-routes.get("/user", userController.index);
+routes.post("/user", userController.index);
 routes.get("/event", eventController.index);
 routes.get("/ticket", ticketController.index);
 
