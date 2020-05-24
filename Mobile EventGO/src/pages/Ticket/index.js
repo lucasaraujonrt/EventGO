@@ -1,6 +1,10 @@
-import react from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
+import React from "react";
 
 export default function Ticket() {
-  return <View />;
+  return (
+    <View>
+      <Text>Hello World</Text>
+    </View>
+  );
 }
