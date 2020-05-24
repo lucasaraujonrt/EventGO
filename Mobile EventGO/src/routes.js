@@ -1,12 +1,14 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+
 const appStack = createStackNavigator();
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Event from "./pages/Event";
 import Ticket from "./pages/Ticket";
+import MyTicket from "./pages/MyTicket";
 
 export default function Routes() {
   return (
@@ -16,6 +18,7 @@ export default function Routes() {
         <appStack.Screen name="Login" component={Login} />
         <appStack.Screen name="Event" component={Event} />
         <appStack.Screen name="Ticket" component={Ticket} />
+        <appStack.Screen name="MyTicket" component={MyTicket} />
       </appStack.Navigator>
     </NavigationContainer>
   );
