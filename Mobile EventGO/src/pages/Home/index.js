@@ -10,7 +10,6 @@ import {
 import MBLabs from "../../assets/ImgEvents/MBLabs.png";
 import Mescla from "../../assets/ImgEvents/Mescla.png";
 import IFood from "../../assets/ImgEvents/IfoodMeetsUps.png";
-import DevCamp from "../../assets/ImgEvents/DevCamp.png";
 import styles from "./styles";
 import { AntDesign, Entypo } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
@@ -24,10 +23,13 @@ export default function Home() {
   function navigateToMyTicket() {
     navigation.navigate("MyTicket");
   }
+  function navigateToLogin() {
+    navigation.navigate("Login");
+  }
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => {}}>
+        <TouchableOpacity onPress={navigateToLogin}>
           <AntDesign
             name="user"
             size={24}

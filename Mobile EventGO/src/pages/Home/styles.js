@@ -5,7 +5,6 @@ export default StyleSheet.create({
     backgroundColor: "#285EC4",
     flex: 1,
     flexDirection: "column",
-    fontFamily: "Montserrat",
   },
   header: {
     marginTop: 40,
