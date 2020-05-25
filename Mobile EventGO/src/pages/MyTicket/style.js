@@ -5,9 +5,10 @@ export default StyleSheet.create({
     backgroundColor: "#285EC4",
     flex: 1,
     flexDirection: "column",
+    paddingLeft: 50,
+    paddingRight: 50,
   },
   header: {
-    marginTop: 40,
     flexDirection: "row",
     justifyContent: "space-around",
   },

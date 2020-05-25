@@ -16,12 +16,12 @@ export default function Ticket() {
         <TouchableOpacity onPress={navigationToHome}>
           <Image source={logoImg} />
         </TouchableOpacity>
-        <View style={styles.textConfirm}>
-          <Text style={styles.text}>Participação confirmada!!</Text>
-        </View>
-        <View style={styles.textId}>
-          <Text style={styles.text}>O ID do seu ingresso é:</Text>
-        </View>
+      </View>
+      <View style={styles.textConfirm}>
+        <Text style={styles.text}>Participação confirmada!!</Text>
+      </View>
+      <View style={styles.textId}>
+        <Text style={styles.text}>O ID do seu ingresso é:</Text>
       </View>
     </View>
   );
