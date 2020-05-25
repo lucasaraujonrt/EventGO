@@ -38,23 +38,26 @@ export default function MyTicket() {
         <Text style={styles.titleTicket}>Meus Ingresos</Text>
       </View>
       <View style={styles.events}>
-        <View style={styles.event}>
-          <TouchableOpacity onPress={navigateToEvent}>
-            <View style={styles.imageEvent}>
-              <Image source={MBLabs} />
+        <TouchableOpacity onPress={() => {}} style={styles.event}>
+          <View style={styles.imageEvent}>
+            <Image source={MBLabs} style={styles.image} />
+          </View>
+          <View style={styles.ticket}>
+            <Text style={styles.tickerEvent}>MBTalk</Text>
+            <View style={styles.calandar}>
+              <AntDesign
+                name="calendar"
+                size={18}
+                style={styles.iconCalendar}
+              />
+              <Text style={styles.date}>21/05/2020 19:00 pm</Text>
             </View>
-            <Text style={styles.tickerEvent}>MbTalks</Text>
-            <AntDesign name="calendar" size={24} color="#FFFAFA" />
-            <Text style={styles.date}>21/05/2020 19:00 pm</Text>
-            <Entypo
-              name="ticket"
-              size={23.36}
-              color="#FFFAFA"
-              style={styles.iconTicket}
-            />
-            <Text style={styles.price}>Gratuito</Text>
-          </TouchableOpacity>
-        </View>
+            <View style={styles.typeTicket}>
+              <Entypo name="ticket" size={18} style={styles.iconTicket} />
+              <Text style={styles.price}>Gratuito</Text>
+            </View>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
