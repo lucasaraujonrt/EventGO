@@ -4,23 +4,39 @@ export default StyleSheet.create({
     backgroundColor: "#285EC4",
     flex: 1,
     flexDirection: "column",
+    paddingLeft: 50,
+    paddingRight: 50,
+  },
+  header: {
+    flex: 2,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  form: {
+    flex: 1,
+    justifyContent: "space-between",
+    flexDirection: "row",
   },
   login: {
-    backgroundColor: "red",
+    justifyContent: "center",
+    alignItems: "center",
   },
   loginEmail: {
     backgroundColor: "#2E323E",
-    width: 300,
     height: 40,
     borderRadius: 10,
     marginTop: 10,
+    paddingLeft: 10,
+    width: "100%",
   },
   loginPassword: {
     backgroundColor: "#2E323E",
-    width: 300,
     height: 40,
     borderRadius: 10,
     marginTop: 10,
+    paddingLeft: 10,
+    width: "100%",
   },
   button: {
     backgroundColor: "#2E323E",
@@ -28,12 +44,30 @@ export default StyleSheet.create({
     width: 100,
     height: 30,
     justifyContent: "center",
-    marginTop: 100,
+    marginTop: 20,
   },
   textButton: {
     color: "#FFFAFA",
+    textAlign: "center",
   },
   textGoogle: {
     color: "#FFFAFA",
+  },
+  forgotPassoword: {
+    marginTop: 25,
+  },
+  forgotText: {
+    color: "#FFFAFA",
+  },
+  loginGoogle: {
+    flex: 1,
+  },
+  buttonGoogle: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+  iconGoogle: {
+    marginRight: 10,
   },
 });

@@ -14,7 +14,7 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Image source={logoImg} />
+        <Image source={logoImg} style={styles.image} />
       </View>
       <View style={styles.login}>
         <TextInput
@@ -36,24 +36,24 @@ export default function Login() {
           <AntDesign name="lock" size={24} color="#FFFAFA" />
         </TextInput>
       </View>
-      <View style={{ backgroundColor: "red" }}>
+      <View style={styles.form}>
         <TouchableOpacity style={styles.button} onPress={navigationToTicket}>
           <Text style={styles.textButton}>Sign In</Text>
         </TouchableOpacity>
+        <View style={styles.forgotPassoword}>
+          <TouchableOpacity onPress={() => {}}>
+            <Text style={styles.forgotText}>Forgot your password?</Text>
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={styles.loginGoogle}>
-        <TouchableOpacity onPress={() => {}}>
+        <TouchableOpacity onPress={() => {}} style={styles.buttonGoogle}>
           <View style={styles.iconGoogle}>
             <AntDesign name="google" size={24} color="#FFFAFA" />
           </View>
           <View style={styles.textSignIn}>
             <Text style={styles.textGoogle}>Sign In With Google</Text>
           </View>
-        </TouchableOpacity>
-      </View>
-      <View style={styles.forgotPassoword}>
-        <TouchableOpacity onPress={() => {}}>
-          <Text style={styles.forgotText}>Forgot your password?</Text>
         </TouchableOpacity>
       </View>
     </View>
