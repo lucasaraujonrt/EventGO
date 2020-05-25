@@ -18,6 +18,7 @@ export default StyleSheet.create({
     height: 32,
     borderRadius: 10,
     paddingLeft: 10,
+    color: "#FFFAFA",
   },
   iconUser: {
     marginTop: 3,

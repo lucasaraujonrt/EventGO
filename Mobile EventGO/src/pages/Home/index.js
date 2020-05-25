@@ -39,7 +39,7 @@ export default function Home() {
         </TouchableOpacity>
         <TextInput
           style={styles.inputSearch}
-          placeholder="Pesquisar"
+          placeholder={"Pesquisar"}
           placeholderTextColor="#FFFAFA"
         />
         <TouchableOpacity onPress={navigateToMyTicket}>
@@ -82,6 +82,7 @@ export default function Home() {
           data={[1, 2, 3, 4]}
           style={styles.flatlist}
           keyExtractor={(events) => String(events)}
+          showsHorizontalScrollIndicator={false}
           renderItem={() => (
             <View style={styles.events}>
               <TouchableOpacity onPress={() => {}}>
