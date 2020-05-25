@@ -18,6 +18,7 @@ export default function Login() {
       </View>
       <View style={styles.login}>
         <TextInput
+          keyboardType={"email-address"}
           placeholder={"E-mail"}
           textContentType={"emailAddress"}
           style={styles.loginEmail}
@@ -28,7 +29,8 @@ export default function Login() {
       <View style={styles.login}>
         <TextInput
           placeholder={"Password"}
-          textContentType={"password"}
+          secureTextEntry={true}
+          underlineColorAndroid="transparent"
           style={styles.loginPassword}
         >
           <AntDesign name="lock" size={24} color="#FFFAFA" />

@@ -30,8 +30,9 @@ export default function Event() {
         <View style={styles.headerTitle}>
           <Text style={styles.title}>MBTalk</Text>
         </View>
+        <View />
       </View>
-      <View style={styles.event}>
+      <View style={{ flex: 3 }}>
         <View style={styles.eventBody}>
           <Text style={styles.eventDescription}>
             Nesse MB Talk o Erik falara sobre o Ionic framework! O Ionic é uma
@@ -42,23 +43,33 @@ export default function Event() {
           </Text>
         </View>
         <View style={styles.eventInfo}>
-          <View style={styles.iconCalendar}>
-            <AntDesign name="calendar" size={24} color="#FFFAFA" />
+          <View style={{ flexDirection: "row" }}>
+            <View style={styles.iconCalendar}>
+              <AntDesign name="calendar" size={24} color="#FFFAFA" />
+            </View>
+            <View style={styles.infoCalendar}>
+              <Text style={styles.info}>21/05/2020 19:00 pm</Text>
+            </View>
           </View>
-          <View style={styles.infoCalendar}>
-            <Text style={styles.info}>21/05/2020 19:00 pm</Text>
-          </View>
-          <View style={styles.iconTicket}>
-            <Entypo name="ticket" size={24} color="#FFFAFA" />
-          </View>
-          <View style={styles.infoTicket}>
-            <Text style={styles.infoPrice}>Gratuito</Text>
+          <View style={{ flexDirection: "row" }}>
+            <View style={styles.iconTicket}>
+              <Entypo name="ticket" size={24} color="#FFFAFA" />
+            </View>
+            <View style={styles.infoTicket}>
+              <Text style={styles.infoPrice}>Gratuito</Text>
+            </View>
           </View>
         </View>
-        <View style={{ backgroundColor: "red" }}>
-          <TouchableOpacity onPress={navigateToLogin}>
-            <View>
-              <Text>Participar</Text>
+        <View
+          style={{
+            marginBottom: 30,
+            justifyContent: "center",
+            flexDirection: "row",
+          }}
+        >
+          <TouchableOpacity style={styles.button} onPress={navigateToLogin}>
+            <View style={{}}>
+              <Text style={styles.textButton}>Participar!!</Text>
             </View>
           </TouchableOpacity>
         </View>

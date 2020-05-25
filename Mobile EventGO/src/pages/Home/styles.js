@@ -5,6 +5,7 @@ export default StyleSheet.create({
     backgroundColor: "#285EC4",
     flex: 1,
     flexDirection: "column",
+    justifyContent: "space-around",
   },
   header: {
     marginTop: 40,
@@ -36,6 +37,7 @@ export default StyleSheet.create({
     fontSize: 25,
   },
   flatlist: {
-    padding: 5,
+    marginBottom: 10,
+    padding: 0,
   },
 });

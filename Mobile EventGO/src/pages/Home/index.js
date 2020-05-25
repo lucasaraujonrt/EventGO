@@ -54,7 +54,7 @@ export default function Home() {
       <View style={styles.titleOff}>
         <Text style={styles.titleEvent}>Todos os eventos presenciais</Text>
       </View>
-      <View style={{ flex: 2 }}>
+      <View style={{}}>
         <FlatList
           horizontal={true}
           showsHorizontalScrollIndicator={false}
@@ -66,9 +66,6 @@ export default function Home() {
               <TouchableOpacity onPress={navigateToEvent}>
                 <Image source={MBLabs} />
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => {}}>
-                <Image source={Mescla} />
-              </TouchableOpacity>
             </View>
           )}
         />
@@ -76,7 +73,7 @@ export default function Home() {
       <View style={styles.titleOff}>
         <Text style={styles.titleEvent}>Todos online</Text>
       </View>
-      <View style={{ flex: 3 }}>
+      <View style={{}}>
         <FlatList
           horizontal={true}
           data={[1, 2, 3, 4]}
