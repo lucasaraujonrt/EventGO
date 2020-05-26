@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   View,
   TextInput,
@@ -13,6 +13,7 @@ import IFood from "../../assets/ImgEvents/IfoodMeetsUps.png";
 import styles from "./styles";
 import { AntDesign, Entypo } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import api from "../../services/api";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -26,6 +27,13 @@ export default function Home() {
   function navigateToLogin() {
     navigation.navigate("Login");
   }
+  /* async function loadEvents() {
+    const response = await api.get("event");
+  }
+  useEffect(() => {
+    loadEvents();
+   }, []);
+*/
   return (
     <View style={styles.container}>
       <View style={styles.header}>

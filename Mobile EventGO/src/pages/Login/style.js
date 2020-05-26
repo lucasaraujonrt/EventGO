@@ -13,6 +13,9 @@ export default StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  image: {
+    marginTop: 40,
+  },
   form: {
     flex: 1,
     justifyContent: "space-between",
@@ -29,6 +32,8 @@ export default StyleSheet.create({
     marginTop: 10,
     paddingLeft: 10,
     width: "100%",
+    color: "#FFFAFA",
+    fontSize: 14,
   },
   loginPassword: {
     backgroundColor: "#2E323E",
@@ -37,6 +42,8 @@ export default StyleSheet.create({
     marginTop: 10,
     paddingLeft: 10,
     width: "100%",
+    color: "#FFFAFA",
+    fontSize: 14,
   },
   button: {
     backgroundColor: "#2E323E",

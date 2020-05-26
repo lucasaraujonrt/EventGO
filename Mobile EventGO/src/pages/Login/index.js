@@ -22,9 +22,7 @@ export default function Login() {
           placeholder={"E-mail"}
           textContentType={"emailAddress"}
           style={styles.loginEmail}
-        >
-          <AntDesign name="user" size={24} color="#FFFAFA" />
-        </TextInput>
+        ></TextInput>
       </View>
       <View style={styles.login}>
         <TextInput
@@ -32,9 +30,7 @@ export default function Login() {
           secureTextEntry={true}
           underlineColorAndroid="transparent"
           style={styles.loginPassword}
-        >
-          <AntDesign name="lock" size={24} color="#FFFAFA" />
-        </TextInput>
+        ></TextInput>
       </View>
       <View style={styles.form}>
         <TouchableOpacity style={styles.button} onPress={navigationToTicket}>
